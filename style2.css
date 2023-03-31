@@ -1,0 +1,1241 @@
+/* Googlefont Poppins CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  border:none; outline: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+:root{
+    --gradient:linear-gradient(90deg, #2c2815, #11a094);
+  }
+  *::selection{
+    background:#03271e;
+    color:#fff;
+  }
+   html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+  } 
+  html::-webkit-scrollbar{
+    width:1.5rem;
+  }
+  html::-webkit-scrollbar-track{
+    background:#333;
+  }
+  html::-webkit-scrollbar-thumb{
+    background:linear-gradient(#0a677e, #01171b);
+  } 
+  body{
+    background-color: #c0eefa;
+  }
+  h1{
+    /* text-align: center;
+    font-size: 6rem;
+    color: black; */
+    font-size: 40px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+  /* =========BUTTON STYLING START HERE======= */
+  .btn{
+    padding:.7rem 3rem;
+    font-size: 15px;
+    color:#fff;
+    background: rgb(9, 95, 121);
+    border-radius: 10px;
+    margin-top: 1rem;
+    cursor: pointer;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+  }
+  .btn::before{
+    content: '';
+    position: absolute;
+    top:-1rem; left:-100%;
+    background:#fff9;
+    height:150%;
+    width:10%;
+    transform: rotate(25deg);
+    z-index: -1;
+  }
+  .btn:hover::before{
+    transition: .3s linear;
+    left: 120%;
+  }
+  /*======NAVBAR STYLING START HERE====*/
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    height: 70px;
+    background: rgb(9, 95, 121);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+  }
+  nav .navbar{
+    height: 100%;
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0 50px;
+  }
+  .navbar .logo a{
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  nav .navbar .nav-links{
+    line-height: 70px;
+    height: 100%;
+  }
+  nav .navbar .links{
+    display: flex;
+  }
+  nav .navbar .links li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 14px;
+  }
+  nav .navbar .links li a{
+    height: 100%;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .links li:hover .htmlcss-arrow,
+  .links li:hover .js-arrow{
+    transform: rotate(180deg);
+    }
+  
+  nav .navbar .links li .arrow{
+    height: 100%;
+    width: 22px;
+    line-height: 70px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  nav .navbar .links li .sub-menu{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    line-height: 40px;
+    background:rgb(9, 95, 121);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
+    display: none;
+    z-index: 2;
+  }
+  nav .navbar .links li:hover .htmlCss-sub-menu,
+  nav .navbar .links li:hover .js-sub-menu{
+    display: block;
+  }
+  .navbar .links li .sub-menu li{
+    padding: 0 22px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  .navbar .links li .sub-menu a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .navbar .links li .sub-menu .more-arrow{
+    line-height: 40px;
+  }
+  .navbar .links li .htmlCss-more-sub-menu{
+    line-height: 40px; 
+  }
+  .navbar .links li .sub-menu .more-sub-menu{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-radius: 0 4px 4px 4px;
+    z-index: 1;
+    display: none;
+  }
+  .links li .sub-menu .more:hover .more-sub-menu{
+    display: block;
+  }
+  .navbar .nav-links .sidebar-logo{
+    display: none;
+  }
+  .navbar .bx-menu{
+    display: none;
+  }
+  /*=============NAVBAAR STYLING END here===========*/
+
+  /*=============HOME STYLING START HERE===========*/
+  .home{
+  display: flex;
+  background: url(./img/profile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-flow: column;
+  position: relative;
+  padding: 300px 100px !important;
+  /* text-align: left; */
+}
+ .home h1{
+  /* font-size: 3.3rem; */
+  font-size: 40px;
+  color:black;
+  font-weight: 600;
+  text-align: left;
+}  
+.home p{
+  /* font-size: 1.8rem; */
+  font-size: 15px;
+  /* justify-content: left; */
+  color:black;
+  /* padding:1rem 0; */
+  width:60rem; 
+}
+/*=============HOME STYLING END HERE===========*/
+
+
+
+
+/*=============FEATURE STYLING START HERE===========*/
+#feature{
+   
+    padding: 5vw 8vw 0 8vw ;
+    text-align: center;
+  }
+  #feature h1{
+   
+    font-size: 40px;
+      font-weight: 600;
+  }
+  #feature p{
+   
+    font-size: 15px;
+  }
+  
+  #feature .fea-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap: 1rem;
+    padding-top: 25px;
+    margin-top: 50px;
+  }
+  
+  #feature .fea-box{
+    padding: 20px;
+    border-radius: 10px;
+    background: #F9F9FF;
+    text-align: start;
+    border: 1px solid black;
+  }
+  .feat-sec{
+    display: flex;
+    align-items: center;
+  }
+  .feat-sec i{
+    margin-right: 10px;
+  }
+  #feature .fea-box i{
+    font-size: 2.5rem;
+  }
+  #feature .fea-box h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 13px  0 7px 0;
+  }
+  #feature .fea-box p{
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+  }
+  /*=============FEATURE STYLING STYLING END HERE===========*/   
+
+
+  /*=============ABOUT US MAIN PAGE STYLING START HERE===========*/  
+  
+  .about{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+    /* padding-top: 30px;
+    padding-left: 20PX;
+    padding-bottom: 20PX; */
+    
+    }.about .image{
+    flex:1 1 40rem;
+    }
+    .about .image img{
+    height:65vh;
+    width:100%;
+    }
+    .about .content{
+    flex:1 1 40rem;
+    padding-left: 25px;
+    }
+    .about .content h3{
+    /* font-size:2.5rem;
+    color:black;
+    padding:1rem 0; */
+    padding-top: 25px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    }
+    .about .content p{
+    /* font-size: 1.5rem;
+    color:black;
+    padding:1rem 0; */
+    font-size: 15px;
+    line-height: 31px;
+    }
+  /*=============ABOUT US MAIN PAGE STYLING END HERE===========*/    
+  /*=============OUR TEACHER MAIN PAGE STYLING START HERE===========*/ 
+  .slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+  }
+  .slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+  .card{
+    border-radius: 25px;
+    background-color: #FFF;
+  }
+  .image-content,
+  .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+  }
+  .image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+  }
+  .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(9, 95, 121);
+    border-radius: 25px 25px 0 25px;
+  }
+  .overlay::before,
+  .overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color:rgb(9, 95, 121);
+  }
+  .overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+  }
+  .card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+  }
+  .card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid rgb(9, 95, 121);
+  }
+  .name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+  }
+  .description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+  }
+  .swiper-navBtn{
+    color: rgb(9, 95, 121);
+    transition: color 0.3s ease;
+  }
+  .swiper-navBtn:hover{
+    color: rgb(9, 95, 121);
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after{
+    font-size: 35px;
+  }
+  .swiper-button-next{
+    right: 0;
+  }
+  .swiper-button-prev{
+    left: 0;
+  }
+  .swiper-pagination-bullet{
+    background-color:rgb(9, 95, 121);
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: rgb(9, 95, 121);
+  }
+  /*=============OUR TEACHER MAIN PAGE  STYLING END HERE===========*/  
+  
+  
+  /*=============TESTIMONIAL MAIN PAGE STYLING START HERE===========*/ 
+/* .about{
+  display: flex;
+} */
+.testim{
+    position: relative;
+    padding: 80px 60px;
+  }
+  .testim h1{
+    /* color: black; 
+    font-weight: bold;
+    font-size: 6rem;
+    text-align: center; */
+      font-size: 40px;
+      font-weight: 600;
+  }
+  .testim::before{
+    position: absolute;
+    content: "";
+    width: 50%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+      }
+  
+  .testim::after{
+    position: absolute;
+    content: "";
+    width: 50%;
+    top: 0;
+    right:  0;
+    height: 100%;
+      }
+  .testim-content{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  
+  }
+  .testim-content a{
+    text-decoration: none;
+  }
+  .testim-box{
+   z-index: 2;
+   background-color: var(--main-color); 
+   padding: 20px 30px;
+   border: 1px solid black;
+  }
+  .testim-box-content img{
+    top: -10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 30px;
+    position: relative;
+  }
+  .testim-content h3{
+    /* color: #fff; */
+    font-size: 15px;
+    color:black;
+    }
+    .testim-box > p{
+      color: #c2d1c8;
+      padding-bottom: 20px;
+      font-size: 12px;
+    }
+  .testim-box-content p{
+    color: #c2d1c8;
+  font-size: 15px;
+  }
+  :root{
+    --main-color:rgb(9, 95, 121);
+  }
+  
+  /*=============TESTIMONIAL MAIN PAGE  STYLING END HERE===========*/    
+  /*=============OUR COURSES MAIN PAGE  STYLING START HERE===========*/ 
+  
+  .course .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .course .box-container .box{
+    width:35rem;
+    border: 1px solid black;
+    position: relative;
+    margin:1.5rem;  
+  }
+  
+  .course .box-container .box img{
+    height:20rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .course .box-container .box .content{
+    padding:1rem;
+  }
+  
+  .course .box-container .box .content .stars i{
+    color: black;
+    font-size: 1.7rem;
+    padding:1rem .1rem;
+  }
+  
+  .course .box-container .box .content .title{
+    color: black;
+    font-size: 2.5rem;
+  }
+  
+  .course .box-container .box .content .title:hover{
+    text-decoration: underline;
+  }
+  
+  .course .box-container .box .content p{
+    padding:1rem 0;
+    color: black;
+    font-size: 12px;
+  }
+  
+  .course .box-container .box .content .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .5rem;
+    border-top: .1rem solid rgba(0,0,0,.3);
+  }
+  
+  .course .box-container .box .content .info h3{
+    font-size: 12px;
+    padding:1rem;
+    color: black;
+  }
+  
+  .course .box-container .box .content .info h3 i{
+    color: black;
+  }
+  p{
+    color: black;
+  }
+  /*=============OUR COURSES MAIN PAGE  STYLING END HERE===========*/    
+  /*=============CONTACT US MAIN PAGE  STYLING START HERE===========*/ 
+  .contact-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-info{
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 18px;
+    /* padding-top: 120px; */
+    padding-bottom: 120px;
+    
+  }
+  
+  .contact-info i{
+    margin-right: 20px;
+    font-size: 25px;
+  }
+  
+  .contact-form{
+    max-width: 700px;
+    margin-right: 50px;
+  }
+  
+  .contact-info, .contact-form{
+    flex: 1;
+  }
+  
+  .contact-form h2{ 
+    color: #000; 
+    text-align: center; 
+    font-size: 6rem; 
+    text-transform: uppercase; 
+    margin-bottom: 30px;
+    font-size: 40px;
+    margin-top: 117px;
+    font-weight: 600; 
+  }
+  
+  .contact-form .text-box{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+  
+  .contact-form .text-box:first-child{
+    margin-right: 15px;
+  }
+  
+  .contact-form textarea{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+  }
+  
+  .contact-form .send-btn{
+    float: right;
+    background:rgb(9, 95, 121);
+    margin-bottom: 30px;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+   transition-property: background; 
+  }
+  
+  .contact-form .send-btn:hover{
+    background:rgb(9, 95, 121);
+  }
+     
+  /*=============CONTACT US MAIN PAGE  STYLING END HERE===========*/    
+  /*=============FOOTER MAIN PAGE  STYLING START HERE===========*/  
+  .footer{
+    background:rgb(9, 95, 121);
+  }
+  
+  .footer .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer .box-container .box{
+    margin:1.5rem;
+    text-align: center;
+    flex:1 1 25rem;
+  }
+  
+  .footer .box-container .box h3{
+    font-size: 2.5rem;
+    color:#fff;
+    padding:1rem 0;
+  }
+  
+  .footer .box-container .box p{
+    font-size: 1.8rem;
+    color: white;
+    padding:.7rem 0;
+  }
+  
+  .footer .box-container .box p i{
+    padding-right: .5rem;
+    color: white;
+  }
+  
+  .footer .box-container .box a{
+    font-size: 1.8rem;
+    text-decoration: none;
+    display: block;
+    padding:.5rem 0;
+    color: white;
+  }
+  
+  .footer .box-container .box a:hover{
+    text-decoration: underline;
+  }
+  
+  .footer .credit{
+    font-size: 1.8rem;
+    color: white;
+    background:black;
+    text-align: center;
+    font-weight: normal;
+    padding-bottom: 12px;
+  }
+  
+  .footer .credit a{
+    color:black;
+  }  
+  /*=============FOOTER MAIN PAGE  STYLING END HERE===========*/    
+  /*=============WEB PAGE  STYLING START HERE===========*/
+  #web{
+    display: flex;
+    background: url(./img/profile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 100px;
+    width:100%;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #web h2{
+    color: #111;
+    font-size: 3.3rem;
+    letter-spacing:1px;
+  }
+  #course-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8vw;
+  }
+  #course-inner h3{
+    padding: 35px 0 25px 0;
+    font-size: 3.3rem;
+  }
+  #course-inner p{
+    color: black;
+    font-size: 15px;
+  }
+  #course-inner hr{
+    height: 1px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 40px;
+  }
+  #course-inner .overview{
+    width: 70%;
+  }
+  #course-inner .overview .course-img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-bottom: 20px;
+  }
+  #course-inner .overview .course-head{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  #course-inner .overview .course-head .c-name{
+    width: 70%;
+  }
+  #course-inner .overview .course-head .c-name h2{
+    color: black;
+  }
+  #course-inner .overview .course-head .c-name .star{
+    margin: 6px 0;
+  
+  }
+  #course-inner .overview .course-head .c-name .star i{
+    color: rgb(9, 95, 121);
+    font-size: 0.9rem;
+  }
+  #course-inner .overview .course-head .c-name p{
+    font-size:15px ;
+  }
+  #course-inner .learn p{
+    font-size: 15px;
+    padding-bottom: 15px;
+  }
+  #course-inner .learn i{
+    color:rgb(9, 95, 121);
+    font-weight: 700;
+    margin-right: 20px;
+  }
+  #course-inner .tutor{
+    display: flex;
+  }
+  #course-inner .tutor img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  #course-inner .tutor h5{
+    font-size: 15px;
+    padding-top: 20px;
+  }
+  #course-inner .enroll{
+    width: 350px;
+    padding: 0 30px 30px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 20px 40px 0 rgb(11 2 55 / 8% );
+  }
+  #course-inner .enroll h3{
+    padding-bottom: 10px;
+  }
+  #course-inner .enroll p{
+    margin: 10px 0;
+  }
+  #course-inner .enroll p i{
+    color: rgb(9, 95, 121);
+    font-weight: 700;
+    margin-right: 5px;
+  } 
+  /*=============WEB PAGE  STYLING END HERE===========*/    
+  /*=============GRAPHIC PAGE  STYLING START HERE===========*/
+#graphic{
+  display: flex;
+  background: url(./img/profile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 100px;
+  width:100%;
+  height: 70vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*=============GRAPHIC PAGE  STYLING END HERE===========*/  
+
+  /*=============GRAPHIC PAGE  STYLING START HERE===========*/
+  #game{
+    display: flex;
+    background: url(./img/profile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 100px;
+    width:100%;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /*=============GRAPHIC PAGE  STYLING END HERE===========*/
+  /*=============DIGITAL MARKITING PAGE  STYLING START HERE===========*/
+  #digi{
+    display: flex;
+    background: url(./img/profile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 100px;
+    width:100%;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /*=============DIGITAL MARKITING  STYLING END HERE===========*/
+  /*=============CONTENT WRITING PAGE  STYLING START HERE===========*/
+  #content{
+    display: flex;
+    background: url(./img/profile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 100px;
+    width:100%;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /*=============CONENT WRITING PAGE  STYLING END HERE===========*/
+  /*=============APP DEVELOPMENT PAGE  STYLING START HERE===========*/
+  #app{
+    display: flex;
+    background: url(./img/profile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 100px;
+    width:100%;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /*=============APP DEVELOPMENT PAGE  STYLING END HERE===========*/
+  /*=============ARTIFICIAL INTELLIGENCE PAGE  STYLING START HERE===========*/
+  #arti{
+    display: flex;
+    background: url(./img/profile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 100px;
+    width:100%;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+   /*=============ARTIFICIAL INTELLIGENCE PAGE  STYLING END HERE===========*/
+   /*=============ABOUT US PAGE  STYLING START HERE===========*/
+   #ABOUT{
+    display: flex;
+    background: url(./img/profile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* text-align: center; */
+    font-size: 3rem;
+    padding-top: 150px;
+    width:100%;
+    height: 70vh;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+  
+  }
+  h1{
+    /* text-align: center;
+    font-size: 6rem;
+    color: black; */
+    font-size: 40px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+  #ABOUT h2{
+    color: #111;
+    letter-spacing:1px;
+    text-align: left;
+    font-size: 4.3rem;
+  }
+  /* ------------- Section about start------------- */
+  .about{
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  /* flex-direction: row; */
+  /* padding-top: 30px;
+  padding-left: 20PX;
+  padding-bottom: 20PX; */
+  
+  }
+  .about-item{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color:rgb(9, 95, 121);
+  margin-right: 20px;
+  }
+  .about-item:hover{
+  background-color: #FFF;
+  }
+  .about-item:hover i{
+  color: #000 !important;
+  }
+  .about-item:hover p{
+  color: #000 !important;
+  }
+  .about-item:hover h3{
+  color: #000 !important;
+  }
+  .about-item i{
+  font-size: 3.5rem;
+  text-align: center;
+  }
+  .about-item h3{
+  font-size: 3.5rem;
+  text-align: center;
+  
+  } 
+  .about-item p{
+  font-size: 1.7rem;
+  }
+  .about .image{
+  flex:1 1 40rem;
+  }
+  
+  .about .image img{
+  height:65vh;
+  width:100%;
+  }
+  
+  .about .content{
+  flex:1 1 40rem;
+  padding-left: 25px;
+  }
+  .about .content h3{
+  /* font-size:2.5rem;
+  color:black;
+  padding:1rem 0; */
+  padding-top: 25px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  }
+  
+  .about .content p{
+  /* font-size: 1.5rem;
+  color:black;
+  padding:1rem 0; */
+  font-size: 15px;
+  line-height: 31px;
+  }
+  
+   /*=============ABOUT US PAGE  STYLING END HERE===========*/
+   /*=============ALERT BUTTON  STYLING START HERE===========*/
+   /*css for alert messages*/
+
+.alert-success{
+  z-index: 1;
+  background: #D4EDDA;
+  font-size: 18px;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: fixed;
+  right: 0;
+  top: 10px;
+  border-left: 8px solid #3AD66E;
+  border-radius: 4px;
+}
+
+.alert-error{
+  z-index: 1;
+  background: #FFF3CD;
+  font-size: 18px;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: fixed;
+  right: 0;
+  top: 10px;
+  border-left: 8px solid #FFA502;
+  border-radius: 4px;
+}
+   /*=============ALERT BUTTONGE  STYLING END HERE===========*/
+
+  
+
+
+
+  /*==========================NAVIGATION QUERY START HERE ===============*/
+@media (max-width:920px) {
+    nav .navbar{
+      max-width: 100%;
+      padding: 0 25px;
+    }
+  
+    nav .navbar .logo a{
+      font-size: 20px;
+    }
+    nav .navbar .links li{
+      padding: 0 10px;
+      white-space: nowrap;
+    }
+    nav .navbar .links li a{
+      font-size: 15px;
+    }
+  }
+  @media (max-width:800px){
+    nav{
+      position: relative; 
+    }
+    .navbar .bx-menu{
+      display: block;
+    }
+    nav .navbar .nav-links{
+      position: fixed;
+      top: 0;
+      left: -100%;
+      display: block;
+      max-width: 270px;
+      width: 100%;
+      background:  rgb(9, 95, 121);
+      line-height: 40px;
+      padding: 20px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.5s ease;
+      z-index: 1000;
+    }
+    .navbar .nav-links .sidebar-logo{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .sidebar-logo .logo-name{
+      font-size: 15px;
+      color: #fff;
+    }
+      .sidebar-logo  i,
+      .navbar .bx-menu{
+        font-size: 25px;
+        color: #fff;
+      }
+    nav .navbar .links{
+      display: block;
+      margin-top: 20px;
+    }
+    nav .navbar .links li .arrow{
+      line-height: 40px;
+    }
+  nav .navbar .links li{
+      display: block;
+    }
+  nav .navbar .links li .sub-menu{
+    position: relative;
+    top: 0;
+    box-shadow: none;
+    display: none;
+  }
+  nav .navbar .links li .sub-menu li{
+    border-bottom: none;
+  
+  }
+  .navbar .links li .sub-menu .more-sub-menu{
+    display: none;
+    position: relative;
+    left: 0;
+  }
+  .navbar .links li .sub-menu .more-sub-menu li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .links li:hover .htmlcss-arrow,
+  .links li:hover .js-arrow{
+    transform: rotate(0deg);
+    }
+    .navbar .links li .sub-menu .more-sub-menu{
+      display: none;
+    }
+    .navbar .links li .sub-menu .more span{
+      /* background: red; */
+      display: flex;
+      align-items: center;
+      /* justify-content: space-between; */
+    }
+  
+    .links li .sub-menu .more:hover .more-sub-menu{
+      display: none;
+    }
+    nav .navbar .links li:hover .htmlCss-sub-menu,
+    nav .navbar .links li:hover .js-sub-menu{
+      display: none;
+    }
+  .navbar .nav-links.show1 .links .htmlCss-sub-menu,
+    .navbar .nav-links.show3 .links .js-sub-menu,
+    .navbar .nav-links.show2 .links .more .more-sub-menu{
+        display: block;
+      }
+      .navbar .nav-links.show1 .links .htmlcss-arrow,
+      .navbar .nav-links.show3 .links .js-arrow{
+          transform: rotate(180deg);
+  }
+      .navbar .nav-links.show2 .links .more-arrow{
+        transform: rotate(90deg);
+      }
+  }
+  @media (max-width:370px){
+    nav .navbar .nav-links{
+    max-width: 100%;
+  } 
+  }
+  
+  :root{
+    --main-color:rgb(9, 95, 121);
+  }
+  /* =====================SLIDER COONTENT QUERIES================  */
+  @media screen and (max-width: 768px) {
+    .slide-content{
+      margin: 0 10px;
+    }
+    .swiper-navBtn{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 950px){
+    .contact-section{
+      flex-direction: column;
+    }
+  
+    .contact-info, .contact-form{
+      margin: 30px 50px;
+    }
+  
+    .contact-form h2{
+      font-size: 30px;
+    }
+  
+    .contact-form .text-box{
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .testim-content{
+      flex-direction: column;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .home{
+      padding: 50px 30px !important;
+    }
+    .about{
+      flex-direction: column !important;
+    }
+    #course-inner{
+      flex-direction: column;
+    }
+  }
+  
